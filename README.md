@@ -13,12 +13,12 @@ The system is divided into three main phases:
     Text is split into overlapping chunks with RecursiveCharacterTextSplitter.
     Each chunk is converted into a vector embedding using Ollama's nomic-embed-text.
     Vectors and metadata are stored in ChromaDB (local persistence).
--**Query Interface**
+- **Query Interface** 
     User submits a question via Streamlit UI or direct HTTP request to FastAPI.
     FastAPI uses the retriever to fetch top‑k relevant chunks from ChromaDB.
     The question and retrieved chunks are passed to an Ollama LLM (e.g., llama3.2) to generate a final answer.
     Answer and source references are returned to the client.
--**Evaluation**
+- **Evaluation** 
     A separate script uses RAGAS to measure faithfulness and answer relevance on a set of predefined questions with ground truth answers.
     This helps assess system performance and guides improvements.
 
