@@ -8,7 +8,7 @@ A Retrieval-Augmented Generation (RAG) system that answers questions over financ
 
 The system is divided into three main phases:
 
--**Ingestion Pipeline**
+- **Ingestion Pipeline** 
     PDF documents are loaded using PyPDFLoader.
     Text is split into overlapping chunks with RecursiveCharacterTextSplitter.
     Each chunk is converted into a vector embedding using Ollama's nomic-embed-text.
