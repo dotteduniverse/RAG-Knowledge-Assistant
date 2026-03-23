@@ -1,0 +1,19 @@
+rag-knowledge-assistant/
+├── README.md
+├── requirements.txt
+├── .env.example
+├── docker-compose.yml
+├── app.py
+├── src/
+│   ├── __init__.py
+│   ├── ingest.py
+│   ├── query.py
+│   ├── evaluate.py
+│   ├── config.py
+│   └── utils.py
+├── tests/
+│   ├── __init__.py
+│   └── test_utils.py
+├── data/                      # Placeholder folder for PDFs
+└── docker/
+    └── Dockerfile
