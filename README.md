@@ -23,9 +23,9 @@ The system is divided into three main phases:
     This helps assess system performance and guides improvements.
 
 The system consists of:
--**Ingestion Pipeline**: Load PDFs, chunk text, generate embeddings with Ollama (nomic-embed-text), store in ChromaDB.
--**Query Interface**: FastAPI backend and Streamlit UI that accepts a question, retrieves relevant chunks, and generates an answer using Ollama LLM.
--**Evaluation**: RAGAS metrics (faithfulness, answer relevance) to assess performance.
+- **Ingestion Pipeline**: Load PDFs, chunk text, generate embeddings with Ollama (nomic-embed-text), store in ChromaDB.
+- **Query Interface**: FastAPI backend and Streamlit UI that accepts a question, retrieves relevant chunks, and generates an answer using Ollama LLM.
+- **Evaluation**: RAGAS metrics (faithfulness, answer relevance) to assess performance.
 
 ## Tech Stack 
 - **Python 3.10+**
