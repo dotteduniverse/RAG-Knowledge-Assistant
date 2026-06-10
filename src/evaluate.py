@@ -26,7 +26,7 @@ ground_truths = [
     "Pyspark is the Python API for Spark.",
     "Spark is different because it provides in-memory computing and a unified API for various data processing tasks.",
 ]
-]
+
 
 # Load retriever
 embeddings = OllamaEmbeddings(base_url=OLLAMA_BASE_URL, model=EMBEDDING_MODEL)
