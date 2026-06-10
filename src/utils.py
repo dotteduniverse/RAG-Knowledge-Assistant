@@ -14,7 +14,7 @@ def load_pdfs_from_folder(folder_path):
 
 def get_text_splitter():
     """Return a text splitter configured from env variables."""
-    from src.config import CHUNK_SIZE, CHUNK_OVERLAP
+    from config import CHUNK_SIZE, CHUNK_OVERLAP
     return RecursiveCharacterTextSplitter(
         chunk_size=CHUNK_SIZE,
         chunk_overlap=CHUNK_OVERLAP,

@@ -7,7 +7,7 @@ from langchain_community.llms import Ollama
 from ragas import evaluate
 from ragas.metrics import faithfulness, answer_relevancy
 from datasets import Dataset
-from src.config import (
+from config import (
     OLLAMA_BASE_URL,
     EMBEDDING_MODEL,
     LLM_MODEL,
@@ -17,14 +17,15 @@ from src.config import (
 
 # Sample evaluation questions and ground truth (synthetic)
 questions = [
-    "What was the total revenue in 2023?",
-    "Who is the CEO?",
-    "What are the main risks mentioned?",
+    "What is spark?",
+    "Who is pyspark",
+    "What makes spark different from other big data processing frameworks?",
 ]
 ground_truths = [
-    "Total revenue was $XX million.",
-    "The CEO is John Doe.",
-    "The risks include market competition and regulatory changes.",
+    "Spark is a distributed computing framework.",
+    "Pyspark is the Python API for Spark.",
+    "Spark is different because it provides in-memory computing and a unified API for various data processing tasks.",
+]
 ]
 
 # Load retriever

@@ -5,7 +5,7 @@ from langchain_community.embeddings import OllamaEmbeddings
 from langchain_chroma import Chroma
 from langchain_community.llms import Ollama
 from langchain.chains import RetrievalQA
-from src.config import (
+from config import (
     OLLAMA_BASE_URL,
     EMBEDDING_MODEL,
     LLM_MODEL,

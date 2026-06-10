@@ -2,14 +2,15 @@
 import os
 from langchain_community.embeddings import OllamaEmbeddings
 from langchain_chroma import Chroma
-from src.config import (
+from config import (
     OLLAMA_BASE_URL,
     EMBEDDING_MODEL,
     CHROMA_PERSIST_DIR,
     COLLECTION_NAME,
     DATA_FOLDER,
 )
-from src.utils import load_pdfs_from_folder, get_text_splitter
+
+from utils import load_pdfs_from_folder, get_text_splitter
 
 def main():
     # 1. Load documents
